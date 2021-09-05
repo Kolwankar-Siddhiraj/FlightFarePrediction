@@ -1,0 +1,274 @@
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>POS Flight Price Prediction</title>
+    
+    
+
+    <div style="height: 140px; width: 100%; padding: 30px; background-color: #5F9EA0;  ">
+        <center>
+            <h1 style="font-family: Stencil Std, fantasy;"> POS ARILINES </h1>
+            <h6><b>Fly over the Sky !</b></h6>
+            <br>
+        </center>
+    </div>
+
+
+
+    
+<!--     
+    <div>
+        <img src="static/POS.jpg" class="w3-border w3-padding" alt="POS Airline" style="height:55%;width:100%">
+    </div>
+     -->
+
+
+
+    <!-- BootStrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+
+    <!-- css -->
+    <link rel="stylesheet" href="static/css/styles.css">
+
+
+</head>
+
+<body style="background-color: #ADD8E6;">
+
+    <!-- As a heading -->
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container-fluid">
+            <div style="width: 100%;" class="navbar-header">
+                <marquee>
+                    <a class="navbar-brand" href="/">
+                        <center>POS FLIGHT PRICE PREDICTION</center>
+                    </a>
+                </marquee>  
+
+            </div>
+        </div>
+    </nav>
+
+    <br>
+
+    <!-- <h3> Calculate your average flight fare ! </h3> -->
+
+    <div class="container">
+
+        
+        <br>
+
+        <!-- {% if prediction_text %}
+        <h1>if else working !</h1>
+        {% endif %} -->
+
+        <style>
+            #show_fare {
+                border: 2px solid black;
+                height: 70px;
+                width: 700px;
+                padding: 10px;
+                text-align: center;
+                background-color: #90EE90;
+                border-radius: 20px;
+                border-bottom: solid green;
+            }
+        </style>
+        <center>
+            <div id="show_fare">
+                <h3>{{ prediction_text }}</h3>
+            </div>
+        </center>
+
+        <br> <br>
+
+        <form action="\predict" method="post">
+
+
+            <style>
+                .card {
+                    border: 2px solid #FF7F50;
+                    border-radius: 30px;
+                    height: 130px;
+                    width: 525px;
+                    background-color: #FAEBD7;
+                }
+            </style>
+
+            <div class="row">
+                <div class="col-sm-6">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title"><b>Departure Date</b></h5>
+                            <!-- Departure -->
+                            <input type="datetime-local" style="border-radius: 10px;" name="Dep_Time" id="Dep_Time" required="required">
+                        </div>
+                    </div>
+                </div>
+                <br>
+                <br>
+                <br>
+                <div class="col-sm-6">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title"><b>Arrival Date</b></h5>
+                            <!-- Arrival -->
+                            <input type="datetime-local" name="Arrival_Time" style="border-radius: 10px;" id="Arrival_Time" required="required">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <br>
+            <br>
+            <br>
+
+            <div class="row">
+                <div class="col-sm-6">
+                    <div class="card">
+                        <div class="card-body">
+                            <!-- Source -->
+                            <h5 class="card-title"><b>Source</b></h5>
+                            <select name="Source" style="border-radius: 10px;" id="Source" required="required">
+                                <option value="Delhi">Delhi</option>
+                                <option value="Kolkata">Kolkata</option>
+                                <option value="Mumbai">Mumbai</option>
+                                <option value="Chennai">Chennai</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title"><b>Destination</b></h5>
+                            <!-- Destination -->
+                            <select name="Destination" id="Destination" style="border-radius: 10px;" required="required">
+                                <option value="Cochin">Cochin</option>
+                                <option value="Delhi">Delhi</option>
+                                <option value="New Delhi">Banglore</option>
+                                <option value="Hyderabad">Hyderabad</option>
+                                <option value="Kolkata">Kolkata</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <br>
+            <br>
+            <br>
+
+            <div class="row">
+                <div class="col-sm-6">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title"><b>Stopage</b></h5>
+                            <!-- Total Stops -->
+                            <select name="stops" style="border-radius: 10px;" required="required">
+                                <option value="0">Non-Stop</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="card">
+                        <div class="card-body">
+                            
+                            
+                            <!-- <h5 class="card-title"><b>Which Airline you want to travel?</b></h5> -->
+
+                            <h5 class="card-title"><b>Select Airline</b></h5>
+                            
+                            <!-- Airline -->
+                            <select name="airline" style="border-radius: 10px;" id="airline" required="required">
+                                <option value="Jet Airways">Jet Airways</option>
+                                <option value="IndiGo">IndiGo</option>
+                                <option value="Air India">Air India</option>
+                                <option value="Multiple carriers">Multiple carriers</option>
+                                <option value="SpiceJet">SpiceJet</option>
+                                <option value="Vistara">Vistara</option>
+                                <option value="Air Asia">Air Asia</option>
+                                <option value="GoAir">GoAir</option>
+                                <option value="Multiple carriers Premium economy">Multiple carriers Premium economy
+                                </option>
+                                <option value="Jet Airways Business">Jet Airways Business</option>
+                                <option value="Vistara Premium economy">Vistara Premium economy</option>
+                                <option value="Trujet">Trujet</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <br> <br> <br> <br>
+        
+            <!-- <h3>{{ prediction_text }}</h3>
+            <br> <br>
+         -->
+        
+        
+         <!-- Submit -->
+
+
+            <!-- orignal submit button -->
+            <!-- <input type="submit" value="Submit" class="btn btn-secondary"> -->
+        
+            <!-- new custom submit button -->
+            <style>
+                #btn_submit {
+                    height: 60px;
+                    width: 200px;
+                    padding: 12px;
+                    border-radius: 20px;
+                }
+            </style>
+
+            <button id="btn_submit" type="submit" value="Submit" class="btn btn-secondary">
+                <b>Calculate Fare</b>
+            </button>
+
+        
+        </form>
+
+        <br>
+        <br>
+        <!-- <h3>{{ prediction_text }}</h3> -->
+
+        <br>
+        <br>
+        <p>Pankaj Jaiswal <|> Omkar Bhatuse <|> Siddhiraj Kolwankar <br>© 2021 POS ARILINES </p>
+
+    </div>
+
+
+
+
+    <!-- JavaScript -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>
