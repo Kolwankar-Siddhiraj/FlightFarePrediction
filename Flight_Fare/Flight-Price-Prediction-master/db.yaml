@@ -1,7 +1,7 @@
 
 
 mysql_host: 'localhost'
-mysql_user: 'roor'
+mysql_user: 'root'
 mysql_password: 'password123'
 mysql_db: 'flight_fare'
 
