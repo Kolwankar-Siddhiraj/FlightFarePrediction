@@ -62,7 +62,9 @@
 
 
 ## Deployment 
-Aws:[http://18.222.113.159:8080/](http://18.222.113.159:8080/)
+This project is deployed on AWS (Amazon Web Services)
+
+AWS deployment link :[http://18.222.113.159:8080/](http://18.222.113.159:8080/)
 
 ## HLD , LLD & WireFrame
 link : https://drive.google.com/drive/folders/1_DhdjzIO776um5f6qzeYBEsiP2DATLFe?usp=sharing
