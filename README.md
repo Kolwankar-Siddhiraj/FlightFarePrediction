@@ -1,4 +1,5 @@
 # Flight Fare Prediction Project
+
 ## Problem Statement:
 
 <p>In the modern world,travelling through flights has become an major part of today's lifestyle as most of the people don't want to waste their time on travelling so they opting flight even for short distance instead of train or bus.he flight ticket prices increase or decrease every now and then depending on various factors like timing of the flights, destination, and duration of flights various occasions such as vacations or festive season.Therefore this Project will help the ones who are planning for trip to save money and time.</p>
@@ -79,5 +80,15 @@ link : https://drive.google.com/drive/folders/1_DhdjzIO776um5f6qzeYBEsiP2DATLFe?
 
 **Siddhiraj Kolwankar**
 e-mail   : siddhirajkolwankar11@gmail.com
-LinkedIn : 
+LinkedIn : [Siddhiraj Kolwankar](https://www.linkedin.com/in/siddhiraj-kolwankar/)
+
+**Pankaj Jaiswal**
+e-mail   : siddhirajkolwankar11@gmail.com
+LinkedIn : [Pankaj jaiswal](https://www.linkedin.com/in/pankaj-jaiswal-2b23a9200/)
+
+**Omkar Bhatuse**
+e-mail   : siddhirajkolwankar11@gmail.com
+LinkedIn : [Omkar Bhatuse](https://www.linkedin.com/in/omkar-bhatuse-b160471b8/)
+
+
 
