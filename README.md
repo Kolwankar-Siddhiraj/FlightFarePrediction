@@ -83,11 +83,11 @@ e-mail   : siddhirajkolwankar11@gmail.com
 LinkedIn : [Siddhiraj Kolwankar](https://www.linkedin.com/in/siddhiraj-kolwankar/)
 
 **Pankaj Jaiswal**
-e-mail   : siddhirajkolwankar11@gmail.com
+e-mail   : pankajj112223333@gmail.com
 LinkedIn : [Pankaj jaiswal](https://www.linkedin.com/in/pankaj-jaiswal-2b23a9200/)
 
 **Omkar Bhatuse**
-e-mail   : siddhirajkolwankar11@gmail.com
+e-mail   : omkarbhatuse895@gmail.com
 LinkedIn : [Omkar Bhatuse](https://www.linkedin.com/in/omkar-bhatuse-b160471b8/)
 
 
