@@ -11,7 +11,7 @@ Flask-Cors==3.0.10
 Flask-MySQLdb==0.2.0
 gunicorn==20.1.0
 ipykernel
-ipython==7.26.0
+ipython
 ipython-genutils==0.2.0
 itsdangerous==2.0.1
 jedi==0.18.0
