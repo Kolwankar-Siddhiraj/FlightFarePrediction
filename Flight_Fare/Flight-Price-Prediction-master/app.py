@@ -12,6 +12,7 @@ from flask_mysqldb import MySQL
 
 
 
+
 # logging.basicConfig(level=logging.DEBUG, filename='test.log',
 #     format='%(asctime)s <:> %(levelname)s <:> %(message)s',
 #     datefmt='%Y-%m-%d <> %H:%M:%S ')
