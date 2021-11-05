@@ -431,7 +431,6 @@ def predict():
         predicted_fare = output
 
         log.addLog("INFO", "Prediction completed Successfully !")
-
         
         try:
             # creating a cursor to add info to database MySQL
