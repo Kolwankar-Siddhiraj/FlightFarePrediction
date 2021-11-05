@@ -30,6 +30,7 @@ app = Flask(__name__)
 log.addLog("INFO", "New executioin started successfully !")
 
 
+
 # Connecting Database MySQL
 
 # db = yaml.load(open('db.yaml'))
@@ -431,6 +432,7 @@ def predict():
 
         log.addLog("INFO", "Prediction completed Successfully !")
 
+        
         try:
             # creating a cursor to add info to database MySQL
             log.addLog("INFO", "Creating cursor to access Database MySQL !")
