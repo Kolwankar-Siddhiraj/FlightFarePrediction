@@ -280,6 +280,8 @@ def predict():
 
         # Source
         # Banglore = 0 (not in column)
+        
+        
         Source = request.form["Source"]
         source_place = Source
         print("Source : ", Source)
